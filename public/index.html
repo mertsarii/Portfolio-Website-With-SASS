@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Portfolio-Website-With-SASS</title>
+</head>
+
+<body>
+    <header id="header__home" class="text-center ">
+        <div class="overlay"></div>
+        <div class="container">
+            <nav class="navbar ">
+                <i class="fa-solid fa-code fa-3x navbar__icon slideInLeft"></i>
+                <ul class="navbar__items slideInRight">
+                    <li><a href="home.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="header-content">
+            <p class="slideInDown">I'am John Jefferson</p>
+            <h1>
+                <span class="typewrite" data-period="1000" data-start-delay="10000"
+                    data-type='["Web Developer","Web Designer","Freelancer"]'></span>
+            </h1>
+            <a href="#" class="btn-primary my-2">Get Started <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+
+    </header>
+
+    <section id="home__services" class="text-center my-3 ">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="border-bottom"></div>
+            <p class="lead">I am a junior web developer proficient in HTML, CSS, JavaScript, and currently learning
+                React. My focus is on creating accessible websites with SEO-friendly practices. I specialize in
+                styling
+                web pages, adding dynamism with JavaScript, and aim to create complex user interfaces using React.
+                Building a portfolio and staying updated with the latest technologies are priorities for me as I
+                work
+                towards becoming a successful full-stack web developer.
+            </p>
+            <div class="services-row">
+                <div>
+                    <span class="circle">
+                        <i class="fa-solid fa-code fa-2x"></i>
+                    </span>
+
+                    <h3>WEB DEVELOPMENT</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus laborum quas tempore
+                        aspernatur totam quisquam sequi nesciunt! Doloribus, aliquam vel.</p>
+                </div>
+
+                <div>
+                    <span class="circle">
+                        <i class="fas fa-paint-brush fa-2x"></i>
+                    </span>
+
+                    <h3>WEB DESIGN</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus laborum quas tempore
+                        aspernatur totam quisquam sequi nesciunt! Doloribus, aliquam vel.</p>
+                </div>
+
+                <div>
+                    <span class="circle">
+                        <i class="fas fa-mobile-alt fa-2x"></i>
+                    </span>
+
+                    <h3>RESPONSIVE DESIGN</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus laborum quas tempore
+                        aspernatur totam quisquam sequi nesciunt! Doloribus, aliquam vel.</p>
+                </div>
+
+                <div>
+                    <span class="circle">
+                        <i class="fas fa-globe fa-2x"></i>
+                    </span>
+
+                    <h3>Cross-Browser Compatibility</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus laborum quas tempore
+                        aspernatur totam quisquam sequi nesciunt! Doloribus, aliquam vel.</p>
+                </div>
+
+                <div>
+                    <span class="circle">
+                        <i class="fas fa-tachometer-alt fa-2x"></i>
+                    </span>
+
+                    <h3>Performance Optimization</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus laborum quas tempore
+                        aspernatur totam quisquam sequi nesciunt! Doloribus, aliquam vel.</p>
+                </div>
+
+                <div>
+                    <span class="circle">
+                        <i class="fas fa-chart-line fa-2x"></i>
+                    </span>
+
+                    <h3>SEO Optimization</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus laborum quas tempore
+                        aspernatur totam quisquam sequi nesciunt! Doloribus, aliquam vel.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="home__counter" class="text-center my-3">
+        <div class="overlay"> </div>
+        <div class="container">
+            <div class="counter-row ">
+                <div class="col-3">
+                    <div class="counter-circle">
+                        <i class="fas fa-clipboard-check fa-3x" style="color: blue;"></i>
+                    </div>
+                    <div class="counter-box">
+                        <p class="counter" data-target="1689"></p>
+                        <span class="counter-text">WORKS COMPLETED</span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="counter-circle">
+                        <i class="fas fa-thumbs-up fa-3x" style="color: green;"></i>
+                    </div>
+                    <div class="counter-box ">
+                        <p class="counter" data-target="1278"></p>
+                        <span class="counter-text">SATISFIED CUSTOMERS</span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="counter-circle">
+                        <i class="fas fa-award fa-3x" style="color: gold;"></i>
+                    </div>
+                    <div class="counter-box">
+                        <p class="counter" data-target="682"></p>
+                        <span class="counter-text">APPROVALS</span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="counter-circle">
+                        <i class="fas fa-star fa-3x" style="color: purple;"></i>
+                    </div>
+                    <div class="counter-box">
+                        <p class="counter" data-target="561"></p>
+                        <span class="counter-text">AWARDS WON</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="home__pricing" class="text-center my-4 ">
+        <div class="container">
+
+            <h2 class="section-title">Pricing</h2>
+            <div class="border-bottom"></div>
+            <p class="lead">Select the plan that best fits your needs and budget. We offer flexible options to
+                ensure
+                you get the most out of our services. Upgrade or downgrade anytime as your business evolves. Contact
+                us
+                today to discuss your specific requirements and let us help you achieve your goals.
+            </p>
+
+
+            <div id="home__pricing__row" class="text-center px-3">
+                <div class="pricing-card">
+                    <div class="pricing-card__inner">
+                        <div class="pricing-card__front">
+                            <h3>Basic Plan</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugiat exercitationem
+                                soluta
+                                quaerat incidunt quos sit eum eius tenetur voluptatibus?</p>
+                            <p class="price">$19</p>
+                        </div>
+                        <div class="pricing-card__back">
+                            <ul>
+                                <li>100 applications <i class="fa-solid fa-check"></i></li>
+                                <li>24x7 support available <i class="fa-solid fa-check"></i></li>
+                                <li>No hidden fees <i class="fa-solid fa-check"></i></li>
+                                <li>Free 30-days trial <i class="fa-solid fa-check"></i></li>
+                                <li>Stop anytime easily <i class="fa-solid fa-check"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-card__inner">
+                        <div class="pricing-card__front">
+                            <h3>Simple Choice</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugiat exercitationem
+                                soluta
+                                quaerat incidunt quos sit eum eius tenetur voluptatibus?</p>
+                            <p class="price">$29</p>
+                        </div>
+                        <div class="pricing-card__back">
+                            <ul>
+                                <li>100 applications <i class="fa-solid fa-check"></i></li>
+                                <li>24x7 support available <i class="fa-solid fa-check"></i></li>
+                                <li>No hidden fees <i class="fa-solid fa-check"></i></li>
+                                <li>Free 30-days trial <i class="fa-solid fa-check"></i></li>
+                                <li>Stop anytime easily <i class="fa-solid fa-check"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-card__inner">
+                        <div class="pricing-card__front">
+                            <h3>Special Choice</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugiat exercitationem
+                                soluta
+                                quaerat incidunt quos sit eum eius tenetur voluptatibus?</p>
+                            <p class="price">$39</p>
+                        </div>
+                        <div class="pricing-card__back">
+                            <ul>
+                                <li>100 applications <i class="fa-solid fa-check"></i></li>
+                                <li>24x7 support available <i class="fa-solid fa-check"></i></li>
+                                <li>No hidden fees <i class="fa-solid fa-check"></i></li>
+                                <li>Free 30-days trial <i class="fa-solid fa-check"></i></li>
+                                <li>Stop anytime easily <i class="fa-solid fa-check"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-card__inner">
+                        <div class="pricing-card__front">
+                            <h3>Premium Plan</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugiat exercitationem soluta
+                                quaerat incidunt quos sit eum eius tenetur voluptatibus?</p>
+                            <p class="price">$49</p>
+                        </div>
+                        <div class="pricing-card__back">
+                            <ul>
+                                <li>100 applications <i class="fa-solid fa-check"></i></li>
+                                <li>24x7 support available <i class="fa-solid fa-check"></i></li>
+                                <li>No hidden fees <i class="fa-solid fa-check"></i></li>
+                                <li>Free 30-days trial <i class="fa-solid fa-check"></i></li>
+                                <li>Stop anytime easily <i class="fa-solid fa-check"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="main-footer" class="text-center py-4">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-column">
+                    <div class="about-content">
+                        <h3>About</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis beatae reiciendis,
+                            consequatur doloribus suscipit dolores.</p>
+                        <a href="about.html" class="btn-secondary my-2 ">Learn More <i
+                                class="fa-solid fa-chevron-right "></i> </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="services-content">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web Developing</a></li>
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">Responsive Design</a></li>
+                            <li><a href="#">JavaScript Development</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="touch-content">
+                        <h3>Get in touch</h3>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-phone-alt"></i> +1 987 654 32XX</a></li>
+                            <li><a href="#"><i class="fas fa-envelope"></i> info@example.com</a></li>
+                            <li><a href="#"><i class="fas fa-comments"></i> Live Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content-social my-2">
+                <p>&copy; 2023 All Rights Reserved.</p>
+                <div class="social ">
+                    <i class="fab fa-facebook" style="color:#1877F2;"></i>
+                    <i class="fab fa-twitter" style="color:#1DA1F2;"></i>
+                    <i class="fab fa-linkedin" style="color:#0A66C2;"></i>
+                    <i class="fab fa-youtube" style="color:#FF0000;"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/type-writer.js"></script>
+    <script src="js/counter.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Smooth scrolling to top
+            $(".scroll-to-top").click(function () {
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+                return false;
+            });
+
+            // Show/hide scroll-to-top button based on scroll position
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $(".scroll-to-top").fadeIn();
+                } else {
+                    $(".scroll-to-top").fadeOut();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

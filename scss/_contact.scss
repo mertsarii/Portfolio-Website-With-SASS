@@ -1,0 +1,90 @@
+#contact {
+
+    .contact-form {
+        margin-top: 2rem;
+    }
+
+    .contact-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+
+        &__col-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+        padding: 10px;
+    }
+
+    .form-control {
+        display: block;
+        width: 100%;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+        &:focus {
+            color: #495057;
+            background-color: #fff;
+            border-color: #80bdff;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+
+        textarea.form-control {
+            height: auto;
+        }
+    }
+
+    .social-contact{
+
+
+        .info-box{
+            text-align: center;
+            padding: 1.5rem 0;
+            margin: 10px;
+            height: 120px;
+            .fas{
+                float: left;
+                margin:0 70px;
+                padding: 10px 0;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 60px;
+                width: 60px;
+                border-radius: 50%;
+                border: 2px solid $dark;
+                transition: all .5s ease-in;
+            }
+
+            .fas:hover{
+                background-color: $dark;
+                color: $success;
+                border-color: $light;
+            }
+            .social{
+                
+                .fab{
+                    margin: 10px;;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
+

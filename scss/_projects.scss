@@ -1,0 +1,45 @@
+.portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+
+    .item {
+        box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.8);
+
+        &__image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            height: 200px;
+            
+        }
+
+        &__image img {
+            transition: all 1s;
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+            
+        }
+
+        &:hover .item__image img {
+            transform: scale(1.2);
+        }
+
+        &__content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+
+        }
+
+        a{
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

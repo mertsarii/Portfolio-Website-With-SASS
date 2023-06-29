@@ -1,0 +1,157 @@
+#about {
+
+
+    &-me {
+        .about-row {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 1rem;
+            text-align: center;
+            background-color: $light-gray;
+
+            &__col-12{
+                display: flex;
+                justify-content: space-around;
+                align-items: self-start;
+
+            }
+
+            &__col-6 ul {
+                display: flex;
+                flex-direction: column;
+                align-items: self-start;
+                justify-content: center;  
+
+                li{
+                    font-size: 1rem;
+                }                           
+            }
+        }
+    }
+
+    &-skills {
+
+
+        .skills {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .skill {
+            margin-bottom: 20px;
+        }
+
+        .skill h3 {
+            margin: 0;
+        }
+
+        .progress-bar {
+            height: 20px;
+            background-color: #c8e6c9;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: $success;
+            transform-style: preserve-3d;
+            transform: translateZ(0);
+            animation: progressAnimation 7s ease-in-out forwards;
+            border-radius: 10px;
+        }
+
+        .progress-percent {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $light;
+            font-weight: bold;
+            transform-style: preserve-3d;
+            transform: translateZ(20px);
+        }
+
+        @keyframes progressAnimation {
+            from {
+                width: 0%;
+            }
+        }
+    }
+
+    &-partners {
+        background-color: $light-gray;
+        padding: 50px 0;
+
+        .partner-list {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .partner {
+            margin: 0 10px;
+        }
+
+        .partner img {
+            max-width: 150px;
+            max-height: 150px;
+        }
+    }
+
+    &-references {
+
+
+        .owl-carousel {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 20px;
+
+                img {
+                    width: 240px;
+                    height: 240px;
+                    border-radius: 15px;
+                }               
+            }
+
+            .owl-nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 20px;
+
+                .owl-prev,
+                .owl-next {
+                    width: 70px;
+                    height: 70px;
+                    background-color: $dark;
+                    color: #fff;
+                    padding: 10px;
+                    font-size: 40px;
+                    transition: background-color 0.3s ease;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 10px;
+                    margin:15px;
+                    
+
+                    &:hover {
+                        background-color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+}

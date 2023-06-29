@@ -1,0 +1,266 @@
+.container {
+    max-width: $max-width;
+    padding: 0 1.4rem;
+    margin: auto;
+}
+
+//Buttons
+%btn-all {
+    display: inline-block;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+
+.btn{
+
+    &-primary {
+        @extend %btn-all;
+        background-color: $primary;
+        color: $white
+    }
+    
+    &-secondary {
+        @extend %btn-all;
+        background-color: $blue;
+        color: $white
+    }
+    
+    &-success {
+        @extend %btn-all;
+        background-color: $success;
+        color: $white
+    }
+}
+
+
+a[class^='btn-']:hover {
+    background-color: $light;
+    color: $primary;
+}
+
+a[class^='btn-']:active {
+    transform: scale(0.8);
+}
+
+button[class^='btn-']:hover {
+    background-color: $dark;
+    color: $success;
+}
+
+
+
+.hire-btn {
+    width: 60%;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: $white;
+    font-weight: 600;
+    z-index: 1;
+    cursor: pointer;
+    padding: 1.4rem;
+    transition: all .5s ease;
+    margin-top: 1rem;
+}
+
+
+
+.hire-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+    background: linear-gradient(45deg, #f06, #3cf, #f06);
+    z-index: -1;
+    border-radius: 2rem;
+    background-size: 200%;
+    background-position: 0 0;
+    filter: blur(5px);
+    transition: .5s ease;
+
+}
+
+.hire-btn:hover::before {
+    background-position: 100% 0;
+}
+
+.hire-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+    background: linear-gradient(45deg, rgb(180, 65, 111), #3cf, rgb(138, 15, 121));
+    background-position: 0 0;
+    z-index: -1;
+    border-radius: 4rem;
+    background-size: 200%;
+    transition: .5s ease;
+}
+
+.hire-btn:hover::after {
+    background-position: 100% 0;
+}
+
+.hire-btn:active {
+    transform: scale(0.8);
+}
+
+//Overlay
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $primary;
+    opacity: .4;
+}
+
+
+//Shadow
+
+.shadow {
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.8);
+}
+
+//Border-Radius
+
+.radius {
+    border-radius: 15px;
+}
+
+//Scroll-To-Top
+
+.scroll-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: $primary;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    z-index: 9999;
+}
+
+
+.scroll-to-top:hover {
+    opacity: 0.7;
+}
+
+
+// padding 
+.py {
+    &-1 {
+        padding: 1rem 0;
+    }
+
+    &-2 {
+        padding: 2rem 0;
+    }
+
+    &-3 {
+        padding: 3rem 0;
+    }
+
+    &-4 {
+        padding: 4rem 0;
+    }
+}
+
+.px {
+    &-1 {
+        padding: 0 1rem;
+    }
+
+    &-2 {
+        padding: 0 2rem;
+    }
+
+    &-3 {
+        padding: 0 3rem;
+    }
+
+    &-4 {
+        padding: 0 4rem;
+    }
+}
+
+// margin 
+.my {
+    &-1 {
+        margin: 1rem 0;
+    }
+
+    &-2 {
+        margin: 2rem 0;
+    }
+
+    &-3 {
+        margin: 3rem 0;
+    }
+
+    &-4 {
+        margin: 4rem 0;
+    }
+}
+
+.mx {
+    &-1 {
+        margin: 0 1rem;
+    }
+
+    &-2 {
+        margin: 0 2rem;
+    }
+
+    &-3 {
+        margin: 0 3rem;
+    }
+
+    &-4 {
+        margin: 0 4rem;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.border-bottom {
+    height: 3px;
+    width: 3rem;
+    background-color: $primary;
+    margin: 0 auto 1rem auto;
+}
+
+.lead {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    word-spacing: 2px;
+}

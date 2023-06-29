@@ -1,0 +1,152 @@
+
+@media(max-width: 1000px) {
+
+    #home {
+        &__pricing #home__pricing__row {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    #projects {
+        .portfolio-items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+
+    #contact {
+
+        .social-contact .info-box .social .fab {
+            margin: 0;
+        }
+
+        .social-contact .info-box .fas {
+            margin: 0;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    #header {
+        &__home {
+            height: 30rem;
+
+            .header-content {
+
+                p {
+                    font-size: 2.4rem;
+                }
+
+                h1 {
+                    font-size: 1rem;
+                }
+
+                .typewrite {
+                    font-size: 2.4rem;
+                }
+
+            }
+        }
+    }
+
+    #home__services .services-row,
+    #home__counter .counter-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #home__pricing #home__pricing__row {
+        grid-template-columns: 1fr ;
+    }
+
+    #about {
+        &-me {
+            .about-row {
+                grid-template-columns: 1fr;
+
+                &__col-12 {
+                    flex-direction: column;
+                }
+            }
+        }
+
+    }
+
+    .portfolio-items {
+        grid-template-columns: 1fr !important;
+    }
+
+
+}
+
+@media(max-width: 576px) {
+
+    #home {
+
+        &__services .services-row,
+        &__counter .counter-row {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__pricing .pricing-card {
+            padding: .8rem;
+        }
+    }
+
+    .lead {
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+        word-spacing: 1px;
+    }
+
+    #header {
+        &__home {
+            height: 10rem;
+            border-radius: 2px solid $primary;
+            background-position: 30% 30%;
+
+            .header-content {
+                display: none;
+            }
+        }
+
+        &__other {
+            height: 10rem;
+        }
+    }
+
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: .5rem;
+
+        li {
+            padding: .8rem;
+            font-size: 15px;
+        }
+    }
+
+    .footer-content-social {
+        flex-direction: column-reverse;
+    }
+
+    .footer-row {
+        grid-template-columns: 1fr;  
+    }
+
+    .footer-column:first-child {
+        order: 3;
+    }
+
+    #contact {
+
+            .contact-row {
+                &__col-6 {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+    }
+
+}
+

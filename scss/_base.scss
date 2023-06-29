@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+::after, ::before {
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+
+body {
+    background-color: $light;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: $primary;
+}
+
+li {
+    list-style: none ;
+}
+
+img {
+    width: 100%;
+}

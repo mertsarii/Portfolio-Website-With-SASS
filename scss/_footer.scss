@@ -1,0 +1,43 @@
+#main-footer{
+    background: $dark;
+    color: $white;
+}
+#main-footer li{
+    margin: 1rem 0;
+}
+
+#main-footer li:hover a{
+    color: $success;
+}
+#main-footer h3{
+    margin: 1rem 0;
+}
+
+
+.footer-row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.footer-content-social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .social .fab{
+        padding: 1rem;
+        font-size: 1.2rem;
+        margin: .2rem;
+        border: 2px solid $white;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all .3s ease-out;
+    
+        &:hover{
+        box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
+        background-color: $light;
+        }
+
+    }
+}
+
